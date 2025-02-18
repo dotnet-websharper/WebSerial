@@ -107,7 +107,7 @@ module Definition =
         Class "Serial"
         |=> Inherits T<Dom.EventTarget> 
         |+> Instance [
-            "requestPort" => SerialPortRequestOptions?options ^-> T<Promise<_>>[SerialPort] 
+            "requestPort" => !?SerialPortRequestOptions?options ^-> T<Promise<_>>[SerialPort] 
             "getPorts" => T<unit> ^-> T<Promise<_>>[!|SerialPort] 
         ]
     
@@ -117,9 +117,16 @@ module Definition =
             "serial" =? Serial.Type
         ]
 
+    let WorkerNavigator =
+        Class "WorkerNavigator"
+        |+> Instance [
+            "serial" =? Serial.Type
+        ]
+
     let Assembly =
         Assembly [
             Namespace "WebSharper.WebSerial" [
+                WorkerNavigator
                 Navigator
                 Serial
                 SerialPort

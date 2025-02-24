@@ -101,6 +101,11 @@ module Definition =
             "close" => T<unit> ^-> T<Promise<unit>> 
             "setSignals" => !?SerialPortSignalOptions?options ^-> T<Promise<unit>> 
             "getSignals" => T<unit> ^-> T<Promise<_>>[SerialPortSignals] 
+
+            "onconnect" =@ T<unit> ^-> T<unit>
+            "onconnect" =@ T<Dom.Event> ^-> T<unit>
+            "ondisconnect" =@ T<unit> ^-> T<unit>
+            "ondisconnect" =@ T<Dom.Event> ^-> T<unit>
         ]
 
     let Serial =

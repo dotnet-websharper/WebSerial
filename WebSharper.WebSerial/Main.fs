@@ -103,9 +103,13 @@ module Definition =
             "getSignals" => T<unit> ^-> T<Promise<_>>[SerialPortSignals] 
 
             "onconnect" =@ T<unit> ^-> T<unit>
+            |> ObsoleteWithMessage "Use OnConnect instead"
             "onconnect" =@ T<Dom.Event> ^-> T<unit>
+            |> WithSourceName "OnConnect"
             "ondisconnect" =@ T<unit> ^-> T<unit>
+            |> ObsoleteWithMessage "Use OnDisconnect instead"
             "ondisconnect" =@ T<Dom.Event> ^-> T<unit>
+            |> WithSourceName "OnDisconnect"
         ]
 
     let Serial =

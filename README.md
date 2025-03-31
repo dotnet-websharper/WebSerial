@@ -77,9 +77,6 @@ module Client =
     // Variable to hold the serial port
     let port = Var.Create<SerialPort> JS.Undefined
 
-    // Access the browser's Serial API
-    let serial = As<Navigator>(JS.Window.Navigator).Serial
-
     // Variable to display the connection status
     let statusMessage = Var.Create "Waiting..."
 
@@ -88,7 +85,7 @@ module Client =
         promise {
             try
                 // Request a serial port from the user
-                let! port = serial.RequestPort()
+                let! port = JS.Window.Navigator.Serial.RequestPort()
 
                 // Open the serial port with specified baud rate
                 do! port.Open(SerialPortOpenOptions(

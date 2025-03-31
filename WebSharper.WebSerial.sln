@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebSharper.WebSerial", "Web
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebSharper.WebSerial.Sample", "WebSharper.WebSerial.Sample\WebSharper.WebSerial.Sample.fsproj", "{57482156-2F0B-43A4-B8A0-731119CA1492}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WebSharper.WebSerial.Extensions", "WebSharper.WebSerial.Extensions\WebSharper.WebSerial.Extensions.fsproj", "{04F1B251-B0CE-443F-8A38-E3F8603B83DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{57482156-2F0B-43A4-B8A0-731119CA1492}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57482156-2F0B-43A4-B8A0-731119CA1492}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57482156-2F0B-43A4-B8A0-731119CA1492}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F1B251-B0CE-443F-8A38-E3F8603B83DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F1B251-B0CE-443F-8A38-E3F8603B83DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F1B251-B0CE-443F-8A38-E3F8603B83DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F1B251-B0CE-443F-8A38-E3F8603B83DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,8 +15,6 @@ module Client =
     type IndexTemplate = Template<"wwwroot/index.html", ClientLoad.FromDocument>
 
     let port = Var.Create<SerialPort> JS.Undefined
-
-    let serial = As<Navigator>(JS.Window.Navigator).Serial
     
     let statusMessage = Var.Create "Waiting..."
     
@@ -24,7 +22,7 @@ module Client =
         promise {
             try
                 // Request a serial port
-                let! port = serial.RequestPort()
+                let! port = JS.Window.Navigator.Serial.RequestPort()
                 
                 do! port.Open(SerialPortOpenOptions(
                     baudRate = 9600

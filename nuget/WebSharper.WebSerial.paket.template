@@ -1,0 +1,22 @@
+type file
+id WebSharper.WebSerial
+authors
+    IntelliFactory
+owners
+    IntelliFactory
+repositoryType git
+repositoryUrl https://github.com/dotnet-websharper/webserial/
+licenseUrl https://github.com/dotnet-websharper/webserial/blob/master/LICENSE.md
+iconUrl https://github.com/dotnet-websharper/core/raw/websharper50/tools/WebSharper.png
+projectUrl https://github.com/dotnet-websharper/webserial
+description
+    WebSharper bindings for the WebSerial API
+tags
+    Web JavaScript F# C#
+files
+    ../WebSharper.WebSerial/bin/Release/netstandard2.0/WebSharper.WebSerial.dll ==> lib/netstandard2.0
+    ../WebSharper.WebSerial/bin/Release/netstandard2.0/WebSharper.WebSerial.xml ==> lib/netstandard2.0
+    ../WebSharper.WebSerial.Extensions/bin/Release/netstandard2.0/WebSharper.WebSerial.Extensions.dll ==> lib/netstandard2.0
+    ../WebSharper.WebSerial.Extensions/bin/Release/netstandard2.0/WebSharper.WebSerial.Extensions.xml ==> lib/netstandard2.0
+dependencies
+        WebSharper ~> LOCKEDVERSION:[3]

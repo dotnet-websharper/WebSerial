@@ -28,6 +28,12 @@ jobs:
           --password "${{ secrets.PAT_PACKAGE }}" ^
           --store-password-in-clear-text
 
+      - name: Run dotnet restore
+        shell: cmd
+        run: |
+          dotnet tool restore
+          dotnet restore
+
       - name: Build WebSharper Project
         run: dotnet build WebSharper.WebSerial.Sample/WebSharper.WebSerial.Sample.fsproj --configuration Release
 

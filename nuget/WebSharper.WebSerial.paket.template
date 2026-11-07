@@ -15,8 +15,10 @@ tags
     Web JavaScript F# C#
 files
     ../WebSharper.WebSerial/bin/Release/netstandard2.0/WebSharper.WebSerial.dll ==> lib/netstandard2.0
+    ../WebSharper.WebSerial/bin/Release/netstandard2.0/WebSharper.WebSerial.websharper ==> lib/netstandard2.0
     ../WebSharper.WebSerial/bin/Release/netstandard2.0/WebSharper.WebSerial.xml ==> lib/netstandard2.0
     ../WebSharper.WebSerial.Extensions/bin/Release/netstandard2.0/WebSharper.WebSerial.Extensions.dll ==> lib/netstandard2.0
+    ../WebSharper.WebSerial.Extensions/bin/Release/netstandard2.0/WebSharper.WebSerial.Extensions.websharper ==> lib/netstandard2.0
     ../WebSharper.WebSerial.Extensions/bin/Release/netstandard2.0/WebSharper.WebSerial.Extensions.xml ==> lib/netstandard2.0
 dependencies
         WebSharper ~> LOCKEDVERSION:[3]
